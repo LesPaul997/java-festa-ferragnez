@@ -23,6 +23,13 @@ public class CheckGuest {
 		
 		Scanner input = new Scanner (System.in);
 		
+		//Varibile con input name 
+		System.out.println("Inserisci il tuo nome");
+		String name = input.nextLine();
+		
+		//Valore Booleano
+		boolean invited = false;
+		
 		
 		
 	}
