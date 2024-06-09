@@ -30,8 +30,24 @@ public class CheckGuest {
 		//Valore Booleano
 		boolean invited = false;
 		
+		//Ciclo for per verificare se l'utente è tra gli invitati
+		for (int i = 0; i < people.length; i++) {
+			if (name.toLowerCase().equals(people[i].toLowerCase())) {
+				invited = true;
+				break;
+			}
+		}
 		
+		if (!invited) {
+			System.out.println("Non sei nella lista mi dispiace!");
+		} else {
+			System.out.println("Benvenuto/a " + name);
+		}
+		
+		input.close();
 		
 	}
-
+	
 }
+
+
